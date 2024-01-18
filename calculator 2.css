@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #8a0707;
+  font-family: 'Arial', sans-serif;
+}
+
+html {
+  background-image: url(https://media.istockphoto.com/id/1341348395/photo/old-dark-brown-wooden-board.webp?b=1&s=170667a&w=0&k=20&c=2RkgZGKXuSVu78tb-13vUpNiHacLoYgQ9MwAt0_5KiI=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#calculator {
+  background-color: #9e6c6c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(235, 226, 226, 0.863);
+  overflow: hidden;
+  width: 300px;
+}
+
+#display {
+  font-size: 2em;
+  text-align: right;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  user-select: none;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 15px;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.operator {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+button.double {
+  grid-column: span 2;
+}
+
+button.equal {
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+button.clear {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+button.backspace {
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #e0a761;
+}
